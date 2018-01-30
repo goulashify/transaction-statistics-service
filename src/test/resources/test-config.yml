@@ -1,0 +1,10 @@
+age_threshold_ms: 2000
+statistics_refresh_interval_ms: 50
+
+logging:
+  level: INFO
+  loggers:
+    com.danigu.service: TRACE
+    io.dropwizard: INFO
+  appenders:
+    - type: console

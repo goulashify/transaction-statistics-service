@@ -1,0 +1,17 @@
+# A transaction accepted at POST /transactions must be younger than
+age_threshold_ms: 60000
+# The cache of transaction at GET /statistics will be recomputed in an interval of
+statistics_refresh_interval_ms: 125
+
+server:
+  application_connectors:
+    - type: http
+      port: 8080
+#  requestLog:
+#    appenders: []
+# ^ Uncomment this when running benchmarks.
+
+logging:
+  level: WARN
+  appenders:
+    - type: console
